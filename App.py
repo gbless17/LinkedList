@@ -1,6 +1,6 @@
-from LinkedListDS.LinkedList import LinkedList;
+from DS.LinkedListDS import LinkedListDS
 
-linkedList = LinkedList()
+linkedList = LinkedListDS()
 
 linkedList.insertEnd(12)
 linkedList.insertEnd(122)

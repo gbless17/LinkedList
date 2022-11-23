@@ -1,11 +1,11 @@
-from LinkedListDS.Node import Node;
+from .Node import Node
 
 class LinkedListDS(object):
 
     def __init__(self):
         self.head = None
         self.counter = 0
-    #O(N)
+    #O(N)s
     def traverseList(self):
         actualNode = self.head
 
@@ -40,7 +40,7 @@ class LinkedListDS(object):
         actualNode = self.head
 
         while actualNode.nextNode is not None:
-            actualNode.nextNode = newNode
+            actualNode = actualNode.nextNode
         actualNode.nextNode = newNode
 
     def remove(self,data):
